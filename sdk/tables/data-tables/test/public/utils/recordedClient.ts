@@ -2,9 +2,10 @@
 // Licensed under the MIT license.
 
 import { AzureNamedKeyCredential, AzureSASCredential } from "@azure/core-auth";
-import { env, Recorder, RecorderStartOptions, SanitizerOptions } from "@azure-tools/test-recorder";
-import { createTestCredential } from "@azure-tools/test-credential";
+import { Recorder, RecorderStartOptions, SanitizerOptions, env } from "@azure-tools/test-recorder";
 import { TableClient, TableServiceClient } from "../../../src";
+
+import { createTestCredential } from "@azure-tools/test-credential";
 
 const mockAccountName = "fakeaccountname";
 const mockAccountKey = "fakeKey";
